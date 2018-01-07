@@ -1,10 +1,10 @@
 <?php
 namespace app\index\controller;
 
-class Index
+class Index extends \think\Controller
 {
     public function index()
     {
-        return 'index模块';
+        return $this->fetch('index');
     }
 }
