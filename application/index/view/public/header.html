@@ -24,16 +24,43 @@
     <link href="{$Think.const.CDN}/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet"/>
     <!--FONTAWESOME MAIN STYLE -->
     <link href="{$Think.const.CDN}/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"/>
-    <!--SLIDER CSS CLASES -->
-    <link href="assets/Slides-SlidesJS-3/examples/playing/css/slider.css" rel="stylesheet"/>
     <!--CUSTOM STYLE -->
-    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="/assets/css/style.css" rel="stylesheet"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+    <!--高亮-->
+    <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/atom-one-dark.min.css" rel="stylesheet">
 </head>
 <!--END HEAD SECTION -->
 <body>
+
+<!-- NAV SECTION -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">YOUR LOGO</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">首页</a></li>
+                <li><a href="{:url('index/index/md')}">ABOUT</a></li>
+                <li><a href="{:url('index/index/md')}">SERVICES</a></li>
+                <li><a href="{:url('index/index/md')}">PRICING</a></li>
+                <li><a href="{:url('index/index/md')}">GALLERY</a></li>
+                <li><a href="{:url('index/index/md')}">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--END NAV SECTION -->
