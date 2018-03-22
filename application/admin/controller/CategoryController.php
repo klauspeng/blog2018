@@ -16,9 +16,11 @@ class CategoryController extends Base
     public function index()
     {
         $category = new Category();
-        $categoryList = $category->order(['cate_id'=>'desc'])->page(1)->select();
-        var_dump($categoryList[1]['cate_intro']);
-        var_dump(count($categoryList));
+        $categoryList = $category->order(['cate_id' => 'desc'])->page(1)->select();
+        // todo 分页
+        // todo 搜索
+        return $this->assign('categoryLis', $categoryList)->fetch();
+
     }
 
     /**
